@@ -1,0 +1,73 @@
+pipeline {
+  agent {
+    node {
+      label 'nodejs'
+    }
+
+  }
+ 
+  stages {
+    stage('clone code') {
+      agent none
+      steps {
+        container('nodejs') {
+          git(url: 'https://gitee.com/wangshaoqi123/titi-uni-app.git', branch: 'master', credentialsId: 'wsq-token', changelog: true, poll: false)
+        }
+
+      }
+    }
+
+    stage('Run compile&Run test&Run build') {
+      steps {
+         container('nodejs') {
+            //发布现成的网页，无需编译
+            sh 'npm config set registry https://registry.npm.taobao.org&&npm install'
+            sh 'npm config set registry https://registry.npm.taobao.org&&npm run build-development'
+         }
+      }
+    }
+
+    stage('docker&push') {
+      agent none
+      steps {
+        container('nodejs') {
+          withCredentials([usernamePassword(credentialsId : 'test' ,passwordVariable : 'HARBOR_PWD' ,usernameVariable : 'HARBOR_USERNAME' ,)]) {
+            sh 'echo $HARBOR_PWD | docker login $REGISTRY -u $HARBOR_USERNAME --password-stdin'
+          }
+
+           sh 'ls'
+            sh 'docker build -t $REGISTRY/$HARBOR_NAMESPACE/$APP_NAME:sv$BUILD_NUMBER . -f Dockerfile-dev'
+            sh 'docker push  $REGISTRY/$HARBOR_NAMESPACE/$APP_NAME:sv$BUILD_NUMBER'
+            sh 'echo $REGISTRY/$HARBOR_NAMESPACE/$APP_NAME:sv$BUILD_NUMBER'
+
+        }
+
+      }
+    }
+
+    stage('deploy to dev') {
+      steps {
+        container('nodejs') {
+          withCredentials([
+                                                                          kubeconfigFile(
+                                                                                  credentialsId: 'mykubconfig',
+                                                                                  variable: 'KUBECONFIG')
+                                                                                  ]) {
+                sh 'envsubst < deploy/dev-ol/deploy.yaml | kubectl apply -f -'
+              }
+
+            }
+
+          }
+        }
+
+
+          }
+    environment {
+            REGISTRY = '119.23.40.209:30002'
+            HARBOR_NAMESPACE = 'library'
+            APP_NAME = 'titi-app-h5-dev'
+            HARBOR_CREDENTIAL = credentials('test')
+            KUBECONFIG_CREDENTIAL_ID = 'mykubconfig'
+    }
+}

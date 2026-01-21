@@ -1,0 +1,11 @@
+FROM nginx
+VOLUME /tmp
+ENV LANG en_US.UTF-8
+RUN mkdir  -p  /var/www \
+    &&  mkdir -p /var/www/html
+ADD dist/build/h5pack/dev/ /var/www/html/
+COPY ./config-domain/default.conf /etc/nginx/conf.d/default.conf
+COPY ./config-domain/MP_verify_4tpzFzcYitVrl7Dh.txt /var/www/html/MP_verify_4tpzFzcYitVrl7Dh.txt
+COPY ./config-domain/cfeoU188r5.txt /var/www/html/cfeoU188r5.txt
+EXPOSE 80
+EXPOSE 443
