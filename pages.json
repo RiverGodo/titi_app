@@ -1,0 +1,893 @@
+{
+	"subPackages": [{
+		"root": "pages_store",
+		"pages": [{
+				"path": "bar/home",
+				"style": {
+					"navigationBarTitleText": "",
+					"app-plus": {
+						"titleNView": {
+							"autoBackButton": false
+						}
+					}
+				}
+			}, {
+				"path": "bar/mine",
+				"style": {
+					"navigationBarTitleText": "商家中心",
+					"navigationBarBackgroundColor": "#F6F6F6",
+					"navigationBarTextStyle": "black",
+					"app-plus": {
+						"titleNView": {
+							"autoBackButton": false
+						}
+					}
+				}
+
+			},
+			{
+				"path": "merchant/cash/cashList",
+				"style": {
+					"navigationBarTitleText": "现金券列表",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "merchant/cash/usageRecord",
+				"style": {
+					"navigationBarTitleText": "使用记录",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "merchant/cash/cashDetial",
+				"style": {
+					"navigationBarTitleText": "现金券详情",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "merchant/cash/addCash",
+				"style": {
+					"navigationBarTitleText": "发布立减券",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black"
+				}
+
+			},
+			{
+				"path": "bar/cash",
+				"style": {
+					"navigationBarTitleText": "现金券列表",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#FFFFFF",
+					"navigationBarTextStyle": "black",
+					"app-plus": {
+						"titleNView": {
+							"autoBackButton": false
+						}
+					}
+				}
+			},
+			{
+				"path": "ad/list",
+				"style": {
+					"navigationBarTitleText": "交易广场",
+					"enablePullDownRefresh": false,
+					"app-plus": {
+						"titleNView": {
+							"autoBackButton": false
+						}
+					}
+				}
+			},
+			{
+				"path": "ad/adExchange",
+				"style": {
+					"navigationBarTitleText": "订单确认",
+					"enablePullDownRefresh": false
+				}
+
+			},
+			{
+				"path": "ad/adSuccess",
+				"style": {
+					"navigationBarTitleText": "订单确认",
+					"enablePullDownRefresh": false
+				}
+
+			},
+			{
+				"path": "cash/cashDetial",
+				"style": {
+					"navigationBarTitleText": "现金券详情",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "cash/cashShopDetial",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#01C16A"
+				}
+
+			}, {
+				"path": "cash/shopDetial",
+				"style": {
+					"navigationBarTitleText": "店铺名称（某某某店铺）",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#01C86C"
+				}
+
+			}, {
+				"path": "cash/cashExchange",
+				"style": {
+					"navigationBarTitleText": "订单确认",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#01C86C"
+				}
+
+			}, {
+				"path": "cash/cashSuccess",
+				"style": {
+					"navigationBarTitleText": "订单确认",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "cash/myCash/myCash",
+				"style": {
+					"navigationBarTitleText": "我的现金券",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "cash/myCash/useCash",
+				"style": {
+					"navigationBarTitleText": "查看券码",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#01BC64"
+				}
+
+			}, {
+				"path": "cash/myCash/myCashDetial",
+				"style": {
+					"navigationBarTitleText": "订单详情",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "merchant/apply/shop_exchange",
+				"style": {
+					"navigationBarTitleText": "账号信息",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			},
+			{
+				"path": "order/buyOrder/orderList",
+				"style": {
+					"navigationBarTitleText": "买入广告卡订单",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "order/buyOrder/orderDetial",
+				"style": {
+					"navigationBarTitleText": "订单详情",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "order/saleOrder/orderList",
+				"style": {
+					"navigationBarTitleText": "出售广告卡订单",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/myAd/adBalance/adBalanceList",
+				"style": {
+					"navigationBarTitleText": "资金明细-广告卡",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/myAd/adBalance/adBalanceSale",
+				"style": {
+					"navigationBarTitleText": "出售广告卡",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "ad/myAd/adBalance/adBalanceGive",
+				"style": {
+					"navigationBarTitleText": "转赠广告卡",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "ad/myAd/adInfo/adInfo",
+				"style": {
+					"navigationBarTitleText": "广告信息",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/myAd/adInfo/adRechargeList",
+				"style": {
+					"navigationBarTitleText": "充值记录",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/myAd/adInfo/adDeductionList",
+				"style": {
+					"navigationBarTitleText": "扣款记录",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+			}, {
+				"path": "money/money",
+				"style": {
+					"navigationBarTitleText": "资金明细-余额",
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/adDetial",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#01CE77"
+				}
+
+			}, {
+				"path": "money/bean",
+				"style": {
+					"navigationBarTitleText": "资金明细-现金豆",
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+			}, {
+				"path": "money/withdraw",
+				"style": {
+					"navigationBarTitleText": "提现"
+				}
+			}, {
+				"path": "money/withdrawLog",
+				"style": {
+					"navigationBarTitleText": "提现记录"
+				}
+			}, {
+				"path": "money/bean/beanGive",
+				"style": {
+					"navigationBarTitleText": "赠送现金豆",
+					"navigationBarBackgroundColor": "#FC5531"
+				}
+			}, {
+				"path": "ad/adAdd",
+				"style": {
+					"navigationBarTitleText": "新增广告",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/adAddSuccess",
+				"style": {
+					"navigationBarTitleText": "新增成功",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/adSelectAdress",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}, {
+				"path": "ad/adRank",
+				"style": {
+					"navigationBarTitleText": "榜单",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor": "#ffffff",
+					"navigationBarTextStyle": "black"
+				}
+
+			}
+		]
+	}],
+	"pages": [{
+			"path": "pages/bar/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#e6f9ef",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/bar/mine",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "用户中心",
+				"navigationBarBackgroundColor": "#F6F6F6"
+			}
+		},
+		{
+			"path": "pages/auth/login",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/auth/check",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/scan/scan",
+			"style": {
+				"navigationBarTitleText": "扫码乘梯"
+			}
+		},
+		{
+			"path": "pages/scan/up",
+			"style": {
+				"navigationBarTitleText": "乘梯等候"
+			}
+		},
+		{
+			"path": "pages/worker/apply",
+			"style": {
+				"navigationBarTitleText": "员工入驻"
+			}
+
+		},
+		{
+			"path": "pages/bar/project",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/bar/cash",
+			"style": {
+				"navigationBarTitleText": "现金券列表",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/ad/list",
+			"style": {
+				"navigationBarTitleText": "交易广场",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/download/app",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		// 小程序打包路由从这里结束
+		{
+			"path": "pages/auth/account/bindMobile",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/announce/list",
+			"style": {
+				"navigationBarTitleText": "公告"
+			}
+		},
+		{
+			"path": "pages/announce/detail",
+			"style": {
+				"navigationBarTitleText": "公告详情"
+			}
+		},
+		{
+			"path": "pages/set/setting",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		{
+			"path": "pages/set/share",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/set/about",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/money/bank",
+			"style": {
+				"navigationBarTitleText": "我的银行卡"
+			}
+		},
+		{
+			"path": "pages/money/bankAdd",
+			"style": {
+				"navigationBarTitleText": "添加银行卡"
+			}
+		},
+		{
+			"path": "pages/money/money",
+			"style": {
+				"navigationBarTitleText": "资金明细-余额",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/money/points",
+			"style": {
+				"navigationBarTitleText": "资金明细-积分",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/money/withdraw",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		},
+		{
+			"path": "pages/money/withdrawLog",
+			"style": {
+				"navigationBarTitleText": "提现记录"
+			}
+		},
+		{
+			"path": "pages/invite/up",
+			"style": {
+				"navigationBarTitleText": "邀请乘梯"
+			}
+		}, {
+			"path": "pages/manager/company",
+			"style": {
+				"navigationBarTitleText": "公司管理"
+			}
+		}, {
+			"path": "pages/manager/worker",
+			"style": {
+				"navigationBarTitleText": "员工管理"
+			}
+		}, {
+			"path": "pages/manager/invite",
+			"style": {
+				"navigationBarTitleText": "邀请员工"
+			}
+		}, {
+			"path": "pages/merchant/detail",
+			"style": {
+				"navigationBarTitleText": "店铺详情"
+			}
+		}, {
+			"path": "pages/merchant/ad",
+			"style": {
+				"navigationBarTitleText": "广告卡管理"
+			}
+		}, {
+			"path": "pages/ad/add",
+			"style": {
+				"navigationBarTitleText": "购买广告卡"
+			}
+		}, {
+			"path": "pages/ad/pay",
+			"style": {
+				"navigationBarTitleText": "支付"
+			}
+		}, {
+			"path": "pages/set/info",
+			"style": {
+				"navigationBarTitleText": "修改信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/test/emqx",
+			"style": {
+				"navigationBarTitleText": "测试"
+			}
+
+		}, {
+			"path": "pages/manager/property",
+			"style": {
+				"navigationBarTitleText": "物业中心"
+			}
+		}, {
+			"path": "pages/manager/property/park",
+			"style": {
+				"navigationBarTitleText": "园区管理"
+			}
+		}, {
+			"path": "pages/manager/property/building",
+			"style": {
+				"navigationBarTitleText": "楼栋管理"
+			}
+		}, {
+			"path": "pages/manager/property/company",
+			"style": {
+				"navigationBarTitleText": "公司管理"
+			}
+		}, {
+			"path": "pages/manager/property/parkManager",
+			"style": {
+				"navigationBarTitleText": "添加/修改园区"
+			}
+		}, {
+			"path": "pages/manager/property/buildingManager",
+			"style": {
+				"navigationBarTitleText": "添加/修改楼栋"
+			}
+		}, {
+			"path": "pages/manager/property/companyManager",
+			"style": {
+				"navigationBarTitleText": "添加/修改公司"
+			}
+		},
+		{
+			"path": "pages/manager/property/code",
+			"style": {
+				"navigationBarTitleText": "拜访码"
+			}
+		},
+		{
+			"path": "pages/merchant/apply/shop_select_category",
+			"style": {
+				"navigationBarTitleText": "选择经营品类",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/merchant/apply/shop_explain",
+			"style": {
+				"navigationBarTitleText": "我要开店"
+			}
+		},
+		{
+			"path": "pages/merchant/apply/shop_information",
+			"style": {
+				"navigationBarTitleText": "店铺信息",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		},
+		{
+			"path": "pages/merchant/apply/shop_aptitude",
+			"style": {
+				"navigationBarTitleText": "资质信息"
+			}
+		},
+		{
+			"path": "pages/merchant/apply/shop_payment",
+			"style": {
+				"navigationBarTitleText": "收款信息"
+			}
+
+		}, {
+			"path": "pages/merchant/apply/shop_success",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "uni_modules/rt-uni-update/components/rt-uni-update/rt-uni-update",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+
+				}
+			}
+		}, {
+			"path": "pages/cash/cashDetial",
+			"style": {
+				"navigationBarTitleText": "现金券详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/cash/cashShopDetial",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#01C16A"
+			}
+
+		}, {
+			"path": "pages/cash/shopDetial",
+			"style": {
+				"navigationBarTitleText": "店铺名称（某某某店铺）",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#01C86C"
+			}
+
+		}, {
+			"path": "pages/cash/cashExchange",
+			"style": {
+				"navigationBarTitleText": "订单确认",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#01C86C"
+			}
+
+		}, {
+			"path": "pages/cash/cashSuccess",
+			"style": {
+				"navigationBarTitleText": "订单确认",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/cash/myCash/myCash",
+			"style": {
+				"navigationBarTitleText": "我的现金券",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/cash/myCash/useCash",
+			"style": {
+				"navigationBarTitleText": "查看券码",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#01BC64"
+			}
+
+		}, {
+			"path": "pages/cash/myCash/myCashDetial",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/ad/adExchange",
+			"style": {
+				"navigationBarTitleText": "订单确认",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/ad/adSuccess",
+			"style": {
+				"navigationBarTitleText": "订单确认",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/orderList",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/order/orderDetial",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/ad/myAd/adBalance/adBalanceList",
+			"style": {
+				"navigationBarTitleText": "资金明细-广告卡",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/ad/myAd/adBalance/adBalanceSale",
+			"style": {
+				"navigationBarTitleText": "出售广告卡",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#01cf79",
+				"navigationBarTextStyle": "#ffffff"
+
+			}
+
+		}, {
+			"path": "pages/order/buyOrder/orderList",
+			"style": {
+				"navigationBarTitleText": "买入广告卡订单",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/order/buyOrder/orderDetial",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#01cf79"
+			}
+
+		}, {
+			"path": "pages/order/saleOrder/orderList",
+			"style": {
+				"navigationBarTitleText": "出售广告卡订单",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/pay/selectCash",
+			"style": {
+				"navigationBarTitleText": "现金券",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/pay/paySuccess",
+			"style": {
+				"navigationBarTitleText": "支付成功",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/income/incomeList",
+			"style": {
+				"navigationBarTitleText": "合伙人收益列表",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/income/incomeDetial",
+			"style": {
+				"navigationBarTitleText": "收益详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/prize/prize",
+			"style": {
+				"navigationBarTitleText": "中奖榜单",
+				"navigationBarBackgroundColor": "#fc5531",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/prize/prizeList",
+			"style": {
+				"navigationBarTitleText": "我的中奖纪录",
+				"navigationBarBackgroundColor": "#FC5C39",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/safe/waf",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/gpt/gpt",
+			"style": {
+				"navigationBarTitleText": "友惠见GPT",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "友惠见",
+		"navigationBarBackgroundColor": "#01cf79",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"color": "#969696",
+		"selectedColor": "#02C362",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"fontSize": "12px",
+		"iconWidth": "20px",
+		"iconfontSrc": "/static/fonts/iconfont.ttf",
+		"list": [{
+				"pagePath": "pages/bar/home",
+				"iconPath": "static/images/bar/home1.png",
+				"selectedIconPath": "static/images/bar/home2.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/bar/cash",
+				"iconPath": "static/images/bar/p1.png",
+				"selectedIconPath": "static/images/bar/p2.png",
+				"text": "现金券"
+			},
+			{
+				"pagePath": "pages/ad/list",
+				"iconPath": "static/images/bar/ad1.png",
+				"selectedIconPath": "static/images/bar/ad2.png",
+				"text": "交易广场"
+			},
+			{
+				"pagePath": "pages/bar/mine",
+				"iconPath": "static/images/bar/mine1.png",
+				"selectedIconPath": "static/images/bar/mine2.png",
+				"text": "我的"
+			}
+		]
+	}
+}

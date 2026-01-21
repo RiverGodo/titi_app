@@ -1,0 +1,101 @@
+@font-face {
+	font-family: "iconfont";
+	font-weight: normal;
+	font-style: normal;
+	src: url('static/fonts/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+	font-family: "iconfont", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-iconfontscan:before {
+	content: "\e60a";
+}
+.icon-unselected:before {
+	content: "\e63e";
+}
+.icon-selected:before {
+	content: "\e63d";
+}
+.icon-wx-login:before {
+	content: "\e65c";
+}
+.icon-wait:before {
+	content: "\e67c";
+}
+.icon-success:before {
+	content: "\e669";
+}
+.icon-cancel:before {
+	content: "\e791";
+}
+
+view, text, input, image{
+	box-sizing: border-box;
+}
+
+/* 布局 */
+.row{
+	/* #ifndef APP-PLUS-NVUE */
+	display:flex;
+	/* #endif */
+	flex-direction:row;
+	align-items: center;
+}
+.column{
+	/* #ifndef APP-PLUS-NVUE */
+	display:flex;
+	/* #endif */
+	flex-direction: column;
+}
+.center{
+	/* #ifndef APP-PLUS-NVUE */
+	display:flex;
+	/* #endif */
+	align-items: center;
+	justify-content: center;
+}
+.fill{
+	flex: 1;
+}
+view,text{
+	line-height: 1;
+}
+/* input */
+.placeholder{
+	color: #999 !important;
+}
+
+/* 头部圆角 */
+.round_head{
+	background: #FC5C39;
+	height: 100%;
+	overflow: hidden;
+}
+
+.round_head .round_head_m{
+	background: #ffffff;
+	border-radius: 30rpx 30rpx 0rpx 0rpx;
+	overflow: hidden;
+	width: 100vw;
+	/* height: 100vh; */
+}
+
+.w_flex_center{
+	display: flex;
+	align-items: center;
+}
+
+.w_flex_start{
+	display: flex;
+	align-items: flex-start;
+}
+
+.w_flex_end{
+	display: flex;
+	align-items: flex-end;
+}

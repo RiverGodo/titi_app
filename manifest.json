@@ -1,0 +1,119 @@
+{
+    "name" : "友惠见Pro",
+    "appid" : "__UNI__5F300D2",
+    "description" : "",
+    "versionName" : "1.1.6",
+    "versionCode" : 13,
+    "transformPx" : false,
+    "h5" : {
+        "devServer" : {
+            "port" : 3007,
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api/seller" : {
+                    "target" : "http://192.168.0.177:4002",
+                    "changeOrigin" : true,
+                    "secure" : false
+                },
+                "/api" : {
+                    "target" : "http://192.168.0.177:4000",
+                    "changeOrigin" : true,
+                    "secure" : false
+                },
+                "/v1" : {
+                    "target" : "https://openai.api2d.net",
+                    "changeOrigin" : true,
+                    "secure" : false
+                }
+            }
+        },
+        "router" : {
+            "mode" : "history",
+            "base" : "/"
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "app-plus" : {
+        "modules" : {
+            "Barcode" : {},
+            "Camera" : {},
+            "SQLite" : {},
+            "OAuth" : {}
+        },
+        "compatible" : {
+            "ignoreVersion" : true
+        },
+        "distribute" : {
+            "ios" : {
+                "dSYMs" : false
+            },
+            "sdkConfigs" : {
+                "ad" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx7166de8f85963ddd",
+                        "UniversalLinks" : "https://51uhj.com/universallinks/"
+                    }
+                }
+            },
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\"/>"
+                ]
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            }
+        }
+    },
+    "mp-weixin" : {
+        "setting" : {
+            "es6" : true,
+            "minified" : true,
+            "postcss" : true
+        },
+        "appid" : "wx88e0b44fb758a4ee",
+        "lazyCodeLoading" : "requiredComponents"
+    }
+}

@@ -1,0 +1,40 @@
+$base-color: #01CF79;
+$line-color: #f0f0f0;
+$bg-color: #f7f7f7;
+$base-color-admin:#FC5C39;
+$base-color-app:#01CF79;
+
+@mixin flex-left($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: left;
+}
+
+@mixin flex-right($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: right;
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-space-between($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-space-around($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: space-around;
+}
