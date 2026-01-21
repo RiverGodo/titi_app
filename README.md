@@ -1,6 +1,6 @@
 ## 电梯助手APP项目简介
 
-本项目是基于 **uni-app + Vue 2 + uView UI** 的多端应用前端工程，支持构建到 H5、App、各类小程序及快应用等平台，用于"梯递助手/友惠见"等相关业务场景的客户端展示与交互。
+本项目是基于 **uni-app + Vue 2 + uView UI** 的多端应用前端工程，支持构建到 H5、App、各类小程序及快应用等平台，用于相关业务场景的客户端展示与交互。
 
 ## 主要功能
 
@@ -155,5 +155,6 @@ yarn build:mp-weixin
 如果这个项目对你有帮助，请作者喝杯奶茶吧！
 
 ![打赏二维码](https://raw.githubusercontent.com/RiverGodo/gallery/main/pay.png)
+
 
 
